@@ -11,18 +11,29 @@
 <script src="script.js"></script>
 <body>
     <main class='container'>
+        <section class = 'calculator'>
         <label class='fieldlabel'>Completions</label>
-        <input  class='inputs' type="number" oninput="test()" name="completions" id="complete">
+        <input  class='inputs' type="number" oninput="rating()" name="completions" id="complete" value = 0>
         <label class='fieldlabel'>Attempts</label>
-        <input type="number" class='inputs'  oninput="test()" name="attempts" id="attempt">
+        <input type="number" class='inputs'  oninput="rating()" name="attempts" id="attempt" value = 0>
         <label class='fieldlabel'>Touchdowns</label>
-        <input type="number" class='inputs'  oninput="test()" name="touchdowns" id="touchdown">
+        <input type="number" class='inputs'  oninput="rating()" name="touchdowns" id="touchdown" value = 0>
         <label class='fieldlabel'>Yards</label>
-        <input type="number"  class='inputs'  oninput="test()" name="yards" id="yards">
+        <input type="number"  class='inputs'  oninput="rating()" name="yards" id="yards" value = 0>
         <label class='fieldlabel'>Interceptions</label>
-        <input type="number" class='inputs'  oninput="test()" name="interceptions" id="int">
-        <button>Test</button>
+        <input type="number" class='inputs'  oninput="rating()" name="interceptions" id="int" value = 0>
+            <button id='reset_button' onclick="reset()">RESET</button>
+    </section>
+    
+    <section class='qb_holder'>
+           
+        <div class='qb_block' id='qb_white'></div>
+        <img class='qb_img' src="./images/img_football.png"/>
 
+    </section>
+    <section class = 'rating_holder'>
+        <p class='rating' id='qb'>0</p>
+    </section>
     </main>
 </body>
 </html>
