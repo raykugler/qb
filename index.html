@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
 
     <title>QB Passer Rating Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Righteous" rel="stylesheet">
 </head>
 <script src="script.js"></script>
 <body>
@@ -25,15 +26,23 @@
             <button id='reset_button' onclick="reset()">RESET</button>
     </section>
     
-    <section class='qb_holder'>
+    <!-- <section class='qb_holder'>
            
         <div class='qb_block' id='qb_white'></div>
         <img class='qb_img' src="./images/img_football.png"/>
 
-    </section>
-    <section class = 'rating_holder'>
+    </section> -->
+<section class='names'>
+    <table class="name_list" id="name_grab"></table>        
+    <table class='name_list_two' id='name_grab_two'></table>
+    <table class='name_list_three' id='name_grab_three'></table>
+    <table class='name_list_four' id='name_grab_four'></table>
+
+</section>
+
+<section class = 'rating_holder'>
         <p class='rating' id='qb'>0</p>
-    </section>
+</section>
     </main>
 </body>
 </html>

@@ -39,7 +39,6 @@ let qbs = [
     {name: 'Blaine Gabbert',  rating: 74.9},
     {name: 'Josh Allen',  rating: 67.9},
     {name: 'Josh Rosen',  rating: 66.7},
-    {name: 'Josh McCown',  rating: 55.8},
 ];
  rating = () => {
     let array = []
@@ -50,6 +49,10 @@ let qbs = [
     let ints = parseInt(document.getElementById('int').value);
     
     let twopoint = 2.375;
+    let parentTable = document.getElementById('name_grab');
+    let parentTableTwo = document.getElementById('name_grab_two');
+    let parentTableThree = document.getElementById('name_grab_three');
+    let parentTableFour = document.getElementById('name_grab_four');
 
     let answer = document.getElementById('qb')
     let a = ((comp / attempts) -.3) * 5;
@@ -85,11 +88,79 @@ let qbs = [
     let fa = rating.toFixed(2);
      console.log(rating);
      answer.innerHTML = fa;
-    block();
+     while(parentTable.hasChildNodes())
+     {
+        parentTable.removeChild(parentTable.firstChild);
+     }
+     while(parentTableTwo.hasChildNodes())
+     {
+        parentTableTwo.removeChild(parentTableTwo.firstChild);
+     }
+     while(parentTableThree.hasChildNodes())
+     {
+        parentTableThree.removeChild(parentTableThree.firstChild);
+     }
+     while(parentTableFour.hasChildNodes())
+     {
+        parentTableFour.removeChild(parentTableFour.firstChild);
+     }
+     list(fa);
+   
+
     }
 
- block=()=>{
-    document.getElementById("qb_white").style.height = '50%';
+ list=(fa)=>{
+
+     let name_holder = document.getElementById('name_grab');
+     let name_holder_two = document.getElementById('name_grab_two');
+     let name_holder_three = document.getElementById('name_grab_three');
+     let name_holder_four = document.getElementById('name_grab_four');
+     let j = 0;
+     for (i = 0; i < qbs.length; i++){
+        let newListName = document.createElement("tr");
+
+        let newNameTextHolder = document.createElement("td");
+        let newNameText = document.createTextNode(qbs[i].name + ': ');
+
+        let newRatingTextHolder = document.createElement("td");
+        let newRatingText = document.createTextNode(qbs[i].rating);
+        
+        newListName.className = "qb_rows";
+        newNameText.className = "qb_name";
+        newRatingText.className = "qb_rating";
+        newNameTextHolder.className = 'qb_text_holder';
+        newRatingTextHolder.className = 'qb_rating_holder';
+
+
+        newNameTextHolder.appendChild(newNameText);
+        newRatingTextHolder.appendChild(newRatingText);
+
+        newListName.appendChild(newNameTextHolder);
+        newListName.appendChild(newRatingTextHolder);
+     
+
+        if(j <= 9 ){ 
+            name_holder.appendChild(newListName); 
+        }
+        else if (j >= 10 && j <= 19){
+            name_holder_two.appendChild(newListName);
+        }
+        else if (j >= 20 && j <= 29){
+            name_holder_three.appendChild(newListName)
+        }
+        else {
+            name_holder_four.appendChild(newListName);
+        }
+        j++;
+
+     }
+    //  var newDiv = document.createElement("div");
+//    document.getElementById("qb_white").style.height = '50%';
+// var Parent = document.getElementById(tableID);
+// while(Parent.hasChildNodes())
+// {
+//    Parent.removeChild(Parent.firstChild);
+// }
  }
  reset=()=>{
     document.getElementById('complete').value = 0;
@@ -97,14 +168,12 @@ let qbs = [
     document.getElementById('touchdown').value = 0;
     document.getElementById('yards').value = 0;
     document.getElementById('int').value = 0;
-    for(i = 0; i < qbs.length; i++){
-        
-    }
-    
-    console.log(qbs[34].name);
+    document.getElementById('qb').innerHTML = 0;
  }
 
-//  document.getElementById("demo").innerHTML = x
+ // AVERAGE 91.33!!!!! //
+
+ //  document.getElementById("demo").innerHTML = x
 
 // a = (comp/att -.3) * 5;
 // b=(yds/att - 3) *.25;
@@ -112,3 +181,6 @@ let qbs = [
 // d= 2.375-(int/att * 25)
 
 // ((a + b + c + d)/6) * 100
+
+// const euros = [29.76, 41.85, 46.5];
+// const sum = euros.reduce((total, amount) => total + amount); 
