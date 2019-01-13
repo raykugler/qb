@@ -1,44 +1,47 @@
 let qbs = [
-    {name: 'Drew Brees', rating: 115.7},
-    {name: 'Patrick Mahomes', rating: 113.8},
-    {name: 'Russell Wilson', rating: 110.9},
-    {name: 'Matt Ryan', rating: 108.1},
-    {name: 'Philip Rivers', rating: 105.5},
-    {name: 'Deshaun Watson', rating: 103.1},
-    {name: 'Carson Wentz', rating: 102.2},
-    {name: 'Jared Goff', rating: 101.1},
-    {name: 'Ryan Fitzpatrick',  rating: 100.4},
-    {name: 'Kirk Cousins',  rating: 99.7},
-    {name: 'Andrew Luck',  rating: 98.7},
-    {name: 'Tom Brady',  rating: 97.7},
-    {name: 'Aaron Rodgers',  rating: 97.6},
-    {name: 'Dak Prescott',  rating: 96.9},
-    {name: 'Ben Roethlisberger',  rating: 96.5},
-    {name: 'Nick Foles',  rating: 96.0},
-    {name: 'Mitchell Trubisky',  rating: 95.4},
-    {name: 'Cam Newton',  rating: 94.2},
-    {name: 'Derek Carr',  rating: 93.9},
-    {name: 'Baker Mayfield',  rating: 93.7 },
-    {name: 'Ryan Tannehill',  rating: 92.7},
-    {name: 'Eli Manning',  rating: 92.4},
-    {name: 'Marcus Mariota',  rating: 92.3},
-    {name: 'Nick Mullens',  rating: 90.8 },
-    {name: 'Jameis Winston',  rating: 90.2},
-    {name: 'Matthew Stafford',  rating: 89.9},
-    {name: 'Andy Dalton',  rating: 89.6},
-    {name: 'Brock Osweiler',  rating: 86.0},
-    {name: 'Alex Smith',  rating: 85.7},
-    {name: 'Lamar Jackson',  rating: 84.5},
-    {name: 'Joe Flacco',  rating: 84.2},
-    {name: 'Jeff Driskel',  rating: 82.2},
-    {name: 'C.J Beathard',  rating: 81.8},
-    {name: 'Case Keenum',  rating: 81.2},
-    {name: 'Blake Bortles',  rating: 79.8},
-    {name: 'Sam Darnold',  rating: 77.6},
-    {name: 'Cody Kessler',  rating: 77.4},
-    {name: 'Blaine Gabbert',  rating: 74.9},
-    {name: 'Josh Allen',  rating: 67.9},
-    {name: 'Josh Rosen',  rating: 66.7},
+    {name: 'Drew Brees', rating: 115.7, name_column: 0,name_row: 0 ,rating_column:1},
+    {name: 'Patrick Mahomes', rating: 113.8, name_column: 0,name_row:1 ,rating_column:1 },
+    {name: 'Russell Wilson', rating: 110.9, name_column: 0,name_row: 2,rating_column: 1},
+    {name: 'Matt Ryan', rating: 108.1, name_column: 0,name_row: 3,rating_column: 1},
+    {name: 'Philip Rivers', rating: 105.5, name_column: 0,name_row: 4,rating_column:1 },
+    {name: 'Deshaun Watson', rating: 103.1, name_column: 0,name_row: 5,rating_column:1 },
+    {name: 'Carson Wentz', rating: 102.2, name_column: 0,name_row: 6,rating_column: 1},
+    {name: 'Jared Goff', rating: 101.1, name_column: 0,name_row:7 ,rating_column: 1},
+    {name: 'Ryan Fitzpatrick',  rating: 100.4, name_column:0 ,name_row:8 ,rating_column: 1},
+    {name: 'Kirk Cousins',  rating: 99.7, name_column: 0,name_row: 9,rating_column: 1},
+
+    {name: 'Andrew Luck',  rating: 98.7, name_column: 2,name_row: 0,rating_column: 3},
+    {name: 'Tom Brady',  rating: 97.7, name_column: 2,name_row: 1,rating_column: 3},
+    {name: 'Aaron Rodgers',  rating: 97.6, name_column: 2,name_row:2 ,rating_column:3 },
+    {name: 'Dak Prescott',  rating: 96.9, name_column: 2,name_row: 3,rating_column: 3},
+    {name: 'Ben Roethlisberger',  rating: 96.5, name_column: 2,name_row: 4,rating_column: 3},
+    {name: 'Nick Foles',  rating: 96.0, name_column: 2,name_row: 5,rating_column: 3},
+    {name: 'Mitchell Trubisky',  rating: 95.4, name_column:2 ,name_row:6 ,rating_column:3 },
+    {name: 'Cam Newton',  rating: 94.2, name_column: 2,name_row: 7,rating_column: 3},
+    {name: 'Derek Carr',  rating: 93.9, name_column: 2,name_row: 8,rating_column: 3},
+    {name: 'Baker Mayfield',  rating: 93.7 , name_column: 2,name_row: 9,rating_column: 3},
+    
+    {name: 'Ryan Tannehill',  rating: 92.7, name_column: 4,name_row: 0,rating_column: 5},
+    {name: 'Eli Manning',  rating: 92.4, name_column: 4,name_row: 1,rating_column: 5},
+    {name: 'Marcus Mariota',  rating: 92.3, name_column: 4,name_row:2 ,rating_column: 5},
+    {name: 'Nick Mullens',  rating: 90.8, name_column: 4,name_row: 3,rating_column: 5 },
+    {name: 'Jameis Winston',  rating: 90.2, name_column: 4,name_row:4 ,rating_column: 5},
+    {name: 'Matthew Stafford',  rating: 89.9, name_column: 4,name_row:5 ,rating_column: 5},
+    {name: 'Andy Dalton',  rating: 89.6, name_column: 4,name_row: 6,rating_column: 5},
+    {name: 'Brock Osweiler',  rating: 86.0, name_column: 4,name_row: 7,rating_column: 5},
+    {name: 'Alex Smith',  rating: 85.7, name_column: 4,name_row: 8,rating_column: 5},
+    {name: 'Lamar Jackson',  rating: 84.5, name_column: 4,name_row: 9,rating_column: 5},
+    
+    {name: 'Joe Flacco',  rating: 84.2, name_column: 6,name_row: 0,rating_column: 7},
+    {name: 'Jeff Driskel',  rating: 82.2, name_column: 6,name_row:1 ,rating_column: 7},
+    {name: 'C.J Beathard',  rating: 81.8, name_column: 6,name_row: 2,rating_column: 7},
+    {name: 'Case Keenum',  rating: 81.2, name_column: 6,name_row: 3,rating_column: 7},
+    {name: 'Blake Bortles',  rating: 79.8, name_column: 6,name_row: 4,rating_column: 7},
+    {name: 'Sam Darnold',  rating: 77.6, name_column:6 ,name_row: 5,rating_column: 7},
+    {name: 'Cody Kessler',  rating: 77.4, name_column:6 ,name_row: 6,rating_column: 7},
+    {name: 'Blaine Gabbert',  rating: 74.9, name_column: 6,name_row:7 ,rating_column: 7},
+    {name: 'Josh Allen',  rating: 67.9, name_column: 6,name_row: 8,rating_column: 7},
+    {name: 'Josh Rosen',  rating: 66.7, name_column: 6,name_row: 9,rating_column: 7},
 ];
  rating = () => {
     let array = []
@@ -49,10 +52,7 @@ let qbs = [
     let ints = parseInt(document.getElementById('int').value);
     
     let twopoint = 2.375;
-    let parentTable = document.getElementById('name_grab');
-    let parentTableTwo = document.getElementById('name_grab_two');
-    let parentTableThree = document.getElementById('name_grab_three');
-    let parentTableFour = document.getElementById('name_grab_four');
+   
 
     let answer = document.getElementById('qb')
     let a = ((comp / attempts) -.3) * 5;
@@ -86,74 +86,26 @@ let qbs = [
     }
     let rating = ((a + b + c + d) /6 ) * 100;
     let fa = rating.toFixed(2);
-     console.log(rating);
-     answer.innerHTML = fa;
-     while(parentTable.hasChildNodes())
-     {
-        parentTable.removeChild(parentTable.firstChild);
-     }
-     while(parentTableTwo.hasChildNodes())
-     {
-        parentTableTwo.removeChild(parentTableTwo.firstChild);
-     }
-     while(parentTableThree.hasChildNodes())
-     {
-        parentTableThree.removeChild(parentTableThree.firstChild);
-     }
-     while(parentTableFour.hasChildNodes())
-     {
-        parentTableFour.removeChild(parentTableFour.firstChild);
-     }
-     list(fa);
-   
+    // let chart =document.getElementById("name_grab");
+    // for(j=0; j< 10; j++){
+    //     for(p=0; p<8; p++){
+    //         let selected = chart.rows[j].cells[p];
+
+    //         if(fa > chart.rows[j].cells[p].innerHTML){
+    //              selected.classList.add("green");
+    //              selected.classList.remove("red");
+    //         }
+    //         else{
+    //             selected.classList.add('red');
+    //             selected.classList.remove('green');
+    //         }
+    //     }
+    // }
+
+    answer.innerHTML = fa;
 
     }
 
- list=(fa)=>{
-
-     let name_holder = document.getElementById('name_grab');
-     let name_holder_two = document.getElementById('name_grab_two');
-     let name_holder_three = document.getElementById('name_grab_three');
-     let name_holder_four = document.getElementById('name_grab_four');
-     let j = 0;
-     for (i = 0; i < qbs.length; i++){
-        let newListName = document.createElement("tr");
-
-        let newNameTextHolder = document.createElement("td");
-        let newNameText = document.createTextNode(qbs[i].name + ': ');
-
-        let newRatingTextHolder = document.createElement("td");
-        let newRatingText = document.createTextNode(qbs[i].rating);
-        
-        newListName.className = "qb_rows";
-        newNameText.className = "qb_name";
-        newRatingText.className = "qb_rating";
-        newNameTextHolder.className = 'qb_text_holder';
-        newRatingTextHolder.className = 'qb_rating_holder';
-
-
-        newNameTextHolder.appendChild(newNameText);
-        newRatingTextHolder.appendChild(newRatingText);
-
-        newListName.appendChild(newNameTextHolder);
-        newListName.appendChild(newRatingTextHolder);
-     
-
-        if(j <= 9 ){ 
-            name_holder.appendChild(newListName); 
-        }
-        else if (j >= 10 && j <= 19){
-            name_holder_two.appendChild(newListName);
-        }
-        else if (j >= 20 && j <= 29){
-            name_holder_three.appendChild(newListName)
-        }
-        else {
-            name_holder_four.appendChild(newListName);
-        }
-        j++;
-
-     }
     //  var newDiv = document.createElement("div");
 //    document.getElementById("qb_white").style.height = '50%';
 // var Parent = document.getElementById(tableID);
@@ -161,7 +113,7 @@ let qbs = [
 // {
 //    Parent.removeChild(Parent.firstChild);
 // }
- }
+ 
  reset=()=>{
     document.getElementById('complete').value = 0;
     document.getElementById('attempt').value = 0;
