@@ -67,6 +67,12 @@
     text-align: center;
 
 }
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
 /* #complete{
     grid-row: 1/2;
 }
